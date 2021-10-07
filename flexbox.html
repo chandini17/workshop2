@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>flexbox</title>
+
+    <style>
+      .flex{
+              display:flex;
+            /*  flex-direction:row;
+              justify-content:center;*/
+              flex-wrap:wrap;
+              height:800px;
+              align-items:flex-start;
+              align-content:center;
+      }
+          .flex>div{
+                   color:magenta;
+                   font-size:30px;
+                   background:#ddd;
+                   padding:1%;
+                   margin:1%;
+          }
+    </style>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  <body>
+    <div class="flex">
+
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+
+    </div>
+  </body>
+</html>
