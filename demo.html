@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">>
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="Width=width-device,initial-scale=0.1">
+
+
+        <title>
+              document
+        </title>
+    </head>
+    <body>
+        <script>
+            //let demo1= function (x,y){
+           //     return x+y;
+            //}
+            //console.log(demo1(3,4));
+            //let list=[1,2,3,5,7,6]
+            //list.forEach(x=> console.log(x*2));
+           // list.map(x=> console.log(x*2))
+
+            let employee={
+                name:"chandini",
+                age:25,
+                designation:"junior software developer"
+            } 
+
+            console.log(employee.designation)
+            //var laptop="dell";
+           // console.log(laptop);
+
+            let{name,age,designation}=employee;
+            console.log(name);
+            console.log(age);
+            console.log(designation);
+
+            let employees=["aparna","divya","hari"]
+            //let [name1,name2,name3]=employees
+            let [name1,...remainList]=employees;
+            console.log(name1);
+            console.log(remainList);
+            //console.log(name3);
+
+
+//            let a=9;b=8;
+  //          [b,a]=[a,b]
+    //        console.log(a);
+      //      console.log(b);
+      //rest parameter
+       function addition(x,y,...remainData){
+           console.log(x);
+           console.log(y);
+           console.log(remainData);
+           console.log(x+y);
+       }
+
+       addition(22,33,11,44);
+
+
+        </script>
+    </body>
+</html>
